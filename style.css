@@ -43,7 +43,7 @@
   display: block;
   z-index: 1;
   background-repeat: repeat-x;
-  animation: city 20s linear infinite;
+  animation: city 10s linear infinite;
 }
 
 @keyframes city {
@@ -67,18 +67,11 @@
   100% {
     transform: translateY(-1px);
   }
-
-  50% {
-    transform: translateY(-1px);
-  }
-  0% {
-    transform: translateY(-1px);
-  }
 }
 .wheel {
   left: 50%;
   bottom: 178px;
-  transform: translateX(-50%);
+  transform: translateX(100%);
   position: absolute;
   z-index: 2;
 }
@@ -109,28 +102,22 @@
   animation: sunanim 480s linear infinite;
 }
 @keyframes sunanim {
-  0% {
-    transform: translate(0px);
-  }
-  50% {
-    transform: translate(-2000px);
-  }
   100% {
     transform: translate(-4000px);
   }
 }
 
-.day {
+.main-text {
   text-align: center;
 }
 
-.day span {
+.main-text span {
   font-size: 50px;
   margin: 8px;
 }
-.day span {
+/* .main-text span {
   right: 30px;
-  animation: spananim 480s linear infinite;
+  animation: dayanim 480s linear infinite;
 }
 @keyframes dayanim {
   0% {
@@ -141,5 +128,32 @@
   }
   100% {
     transform: translate(-4000px);
+  } 
+}*/
+
+/* .heading {
+  animation: heading 0.2s linear 0.1s infinite left both;
+}
+
+@keyframes headinganim {
+  0% {
+    transform: translate(0px);
+  }
+  50% {
+    transform: translate(-2000px);
+  }
+  100% {
+    transform: translate(-4000px);
+  }
+} */
+
+@media only screen and (min-width: 500px) {
+  .main {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow-x: hidden;
   }
 }
